@@ -3,43 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Write Your Story</title>
+  <title>All About Novels</title>
 
   <!-- Internal CSS -->
   <style>
     /* Page body */
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #FFFFFF; /* white background */
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
+      color: #36454F; /* charcoal grey text */
     }
 
-    /* Main heading */
-    h1 {
-      color: #50C878; /* emerald green */
+    /* Navigation bar */
+    nav {
+      background-color: #50C878; /* emerald green */
+      padding: 12px;
       text-align: center;
     }
 
-    /* Subheadings */
-    h2 {
-      color: #9966CC; /* amethyst purple */
-      margin-top: 30px;
-    }
-
-    /* Paragraphs */
-    p {
-      color: #36454F; /* charcoal grey */
-      line-height: 1.6;
-    }
-
-    /* Links */
-    a {
-      color: #FF7F50; /* coral */
+    nav a {
+      color: #FFFFFF; /* white text */
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
+    }
+
+    /* Main heading */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #9966CC; /* amethyst purple */
+      color: #FFFFFF;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    /* Section styling */
+    section {
+      padding: 20px;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #50C878; /* emerald green */
+      margin-top: 0;
     }
 
     /* Images */
@@ -57,7 +73,7 @@
     }
 
     th, td {
-      border: 1px solid #36454F; /* charcoal grey border */
+      border: 1px solid #36454F;
       padding: 10px;
       text-align: center;
     }
@@ -68,7 +84,7 @@
     }
 
     tr:nth-child(even) {
-      background-color: #F2F2F2; /* light grey */
+      background-color: #F2F2F2; /* soft grey */
     }
 
     /* Footer */
@@ -77,100 +93,117 @@
       background-color: #228B22; /* dark forest green */
       color: #FFFFFF;
       padding: 12px;
-      margin-top: 40px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
-  <!-- MAIN TITLE -->
-  <h1>📚 Write Your Story</h1>
-  <p style="text-align:center;">
-    Welcome! This site inspires people to write novels, learn how writing can earn money, 
-    and have fun creating stories. 
-  </p>
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Novels</a>
+    <a href="#how">How to Write</a>
+    <a href="#famous">Famous Books</a>
+    <a href="#tips">Tips & Resources</a>
+  </nav>
 
-  <!-- SECTION 1 -->
-  <h2>Why Write Novels?</h2>
-  <p>Novels let you express creativity, share stories, and even earn money. Many famous books started as random ideas!</p>
-  <p>Today, you can also publish your stories on apps like:</p>
-  <ul>
-    <li><a href="https://www.wattpad.com/">Wattpad</a></li>
-    <li><a href="https://www.webtoons.com/">Webtoon</a></li>
-    <li><a href="https://tapas.io/">Tapas</a></li>
-    <li><a href="https://www.episodeinteractive.com/">Episode</a></li>
-  </ul>
-  <img src="https://cayceberryman.com/wp-content/uploads/2016/08/writing-motivation.jpg" alt="Writing motivation" width="300">
+  <!-- HEADER -->
+  <header id="home">
+    <h1>📚 All About Novels</h1>
+    <p>Learn what novels are, how to write them, and discover famous books & resources.</p>
+  </header>
 
-  <!-- SECTION 2 -->
-  <h2>How to Write a Good Book</h2>
-  <ol>
-    <li>Come up with an idea</li>
-    <li>Build characters and setting</li>
-    <li>Outline chapters</li>
-    <li>Write daily (even a little bit)</li>
-    <li>Edit and polish your work</li>
-  </ol>
-  <p>Helpful guide: <a href="https://blog.reedsy.com/how-to-write-a-novel/">How to Write a Novel (Reedsy)</a></p>
+  <!-- ABOUT NOVELS -->
+  <section id="about">
+    <h2>About Novels</h2>
+    <p>A novel is a long story that expresses creativity, emotions, and ideas. Novels come in many genres:</p>
+    <ul>
+      <li>Fantasy</li>
+      <li>Romance</li>
+      <li>Adventure</li>
+      <li>Science Fiction</li>
+      <li>Historical Fiction</li>
+    </ul>
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/04/17/books-1868068_1280.jpg" alt="Stack of books" width="400">
+  </section>
 
-  <!-- SECTION 3 -->
-  <h2>Famous Success Stories</h2>
-  <p>Some famous novels that started small:</p>
-  <ul>
-    <li><strong>Harry Potter</strong> – J.K. Rowling was rejected 12 times!</li>
-    <li><strong>The Hunger Games</strong> – Suzanne Collins started from a simple idea.</li>
-    <li><strong>The Fault in Our Stars</strong> – John Green began with an online project.</li>
-  </ul>
-  <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter" width="200">
-  <img src="https://m.media-amazon.com/images/I/61Xo+vLlwWL._AC_UF1000,1000_QL80_.jpg" alt="Hunger Games" width="200">
+  <!-- HOW TO WRITE -->
+  <section id="how">
+    <h2>How to Write a Novel</h2>
+    <ol>
+      <li>Come up with a creative idea</li>
+      <li>Create characters and setting</li>
+      <li>Plan chapters with an outline</li>
+      <li>Write regularly (daily if possible)</li>
+      <li>Edit, proofread, and polish</li>
+    </ol>
+    <p>Helpful guide: <a href="https://blog.reedsy.com/how-to-write-a-novel/" target="_blank">How to Write a Novel (Reedsy)</a></p>
+  </section>
 
-  <!-- SECTION 4 -->
-  <h2>How Novels Earn Money</h2>
-  <p>You can make money by:</p>
-  <ul>
-    <li>Publishing on <a href="https://kdp.amazon.com/">Amazon Kindle Direct</a></li>
-    <li>Posting on Wattpad, Webtoon, or Tapas</li>
-    <li>Freelance writing and online publishing</li>
-  </ul>
-  <p>More info: <a href="https://selfpublishing.com/how-to-make-money-writing-a-novel/">Making Money Writing Novels</a></p>
+  <!-- FAMOUS BOOKS -->
+  <section id="famous">
+    <h2>Famous Novels</h2>
+    <p>Some famous novels that started small but became worldwide successes:</p>
+    <ul>
+      <li><strong>Harry Potter</strong> – J.K. Rowling was rejected 12 times!</li>
+      <li><strong>The Hunger Games</strong> – Suzanne Collins started from a simple idea.</li>
+      <li><strong>The Fault in Our Stars</strong> – John Green began with an online project.</li>
+    </ul>
+    <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter" width="200">
+    <img src="https://m.media-amazon.com/images/I/61Xo+vLlwWL._AC_UF1000,1000_QL80_.jpg" alt="Hunger Games" width="200">
+  </section>
 
   <!-- TABLE -->
-  <h2>Famous Books Table</h2>
-  <table>
-    <tr>
-      <th>BOOK TITLE</th>
-      <th>GENRE</th>
-      <th>COST</th>
-      <th>REVIEWS</th>
-    </tr>
-    <tr>
-      <td>Harry Potter</td>
-      <td>Fantasy</td>
-      <td>Ksh. 3,500</td>
-      <td>⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>The Hunger Games</td>
-      <td>Dystopian / Adventure</td>
-      <td>Ksh. 2,800</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-  </table>
+  <section>
+    <h2>Book Information Table</h2>
+    <table>
+      <tr>
+        <th>Book Title</th>
+        <th>Genre</th>
+        <th>Cost</th>
+        <th>Reviews</th>
+      </tr>
+      <tr>
+        <td>Harry Potter</td>
+        <td>Fantasy</td>
+        <td>Ksh. 3,500</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>The Hunger Games</td>
+        <td>Dystopian / Adventure</td>
+        <td>Ksh. 2,800</td>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <td>Wonder</td>
+        <td>Children’s Fiction</td>
+        <td>Ksh. 1,500</td>
+        <td>⭐⭐⭐⭐⭐</td>
+      </tr>
+    </table>
+  </section>
 
-  <!-- SECTION 5 -->
-  <h2>Motivation</h2>
-  <p><em>“Every big writer was once an amateur.”</em></p>
-  <p>Here’s a motivational video:</p>
-  <iframe width="420" height="315" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen></iframe>
+  <!-- TIPS & RESOURCES -->
+  <section id="tips">
+    <h2>Tips & Resources</h2>
+    <p>You can share your stories on different platforms:</p>
+    <ul>
+      <li><a href="https://www.wattpad.com/">Wattpad</a></li>
+      <li><a href="https://www.webtoons.com/">Webtoon</a></li>
+      <li><a href="https://tapas.io/">Tapas</a></li>
+      <li><a href="https://www.episodeinteractive.com/">Episode</a></li>
+      <li><a href="https://kdp.amazon.com/">Amazon Kindle Direct</a></li>
+    </ul>
+    <p>Here’s a motivational video:</p>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen></iframe>
+  </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Write Your Story | Created for Web Technology Class</p>
+    <p>&copy; 2025 All About Novels | Created for Web Technology Class</p>
   </footer>
 
 </body>
 </html>
-
-     
-
- 
