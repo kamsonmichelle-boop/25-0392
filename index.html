@@ -7,54 +7,61 @@
 
   <!-- Internal CSS -->
   <style>
-    /* Page body */
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Trebuchet MS", sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #FFFFFF;
-      color: #36454F; /* charcoal grey text */
+      /* Soft lavender → blush pink gradient */
+      background: linear-gradient(to bottom right, #E6E6FA, #FFD1DC);
+      color: #3E3E3E; /* readable charcoal */
     }
 
     /* Navigation bar */
     nav {
-      background-color: #50C878; /* emerald green */
+      background-color: #A86EBF; /* deep mauve */
       padding: 12px;
       text-align: center;
     }
 
     nav a {
-      color: #FFFFFF; /* white text */
+      color: #FFFFFF; /* white */
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #FFDAB9; /* peach hover */
     }
 
-    /* Main heading */
+    /* Header */
     header {
       text-align: center;
-      padding: 40px 20px;
-      background-color: #9966CC; /* amethyst purple */
+      padding: 50px 20px;
+      background-color: rgba(168, 110, 191, 0.9); /* mauve with transparency */
+      border-radius: 12px;
+      margin: 20px;
       color: #FFFFFF;
     }
 
     header h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 42px;
+      color: #FFDAB9; /* peach */
     }
 
-    /* Section styling */
+    /* Sections */
     section {
       padding: 20px;
-      margin: 20px;
+      margin: 20px auto;
+      width: 85%;
+      background-color: rgba(255, 255, 255, 0.6); /* soft transparent white */
+      border-radius: 12px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
     }
 
     h2 {
-      color: #50C878; /* emerald green */
+      color: #A86EBF; /* deep mauve */
       margin-top: 0;
     }
 
@@ -62,7 +69,18 @@
     img {
       display: block;
       margin: 15px auto;
-      border-radius: 6px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Links */
+    a {
+      color: #FF6F91; /* rose pink */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     /* Table */
@@ -73,27 +91,27 @@
     }
 
     th, td {
-      border: 1px solid #36454F;
+      border: 1px solid #B39EB5; /* soft purple */
       padding: 10px;
       text-align: center;
     }
 
     th {
-      background-color: #87CEEB; /* sky blue */
+      background-color: #B39EB5; /* soft purple */
       color: #FFFFFF;
     }
 
     tr:nth-child(even) {
-      background-color: #F2F2F2; /* soft grey */
+      background-color: #F3E8FF; /* light lavender */
     }
 
     /* Footer */
     footer {
       text-align: center;
-      background-color: #228B22; /* dark forest green */
+      background-color: #A86EBF; /* deep mauve */
       color: #FFFFFF;
-      padding: 12px;
-      margin-top: 30px;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -111,19 +129,19 @@
   <!-- HEADER -->
   <header id="home">
     <h1>📚 All About Novels</h1>
-    <p>Learn what novels are, how to write them, and discover famous books & resources.</p>
+    <p>Discover novels, learn how to write them, and explore inspiring stories.</p>
   </header>
 
   <!-- ABOUT NOVELS -->
   <section id="about">
     <h2>About Novels</h2>
-    <p>A novel is a long story that expresses creativity, emotions, and ideas. Novels come in many genres:</p>
+    <p>Novels are long stories that take readers on a journey. They come in many beautiful genres:</p>
     <ul>
-      <li>Fantasy</li>
-      <li>Romance</li>
-      <li>Adventure</li>
-      <li>Science Fiction</li>
-      <li>Historical Fiction</li>
+      <li>Fantasy ✨</li>
+      <li>Romance 💕</li>
+      <li>Adventure 🌍</li>
+      <li>Science Fiction 🚀</li>
+      <li>Historical Fiction ⏳</li>
     </ul>
     <img src="https://cdn.pixabay.com/photo/2016/11/29/04/17/books-1868068_1280.jpg" alt="Stack of books" width="400">
   </section>
@@ -132,23 +150,23 @@
   <section id="how">
     <h2>How to Write a Novel</h2>
     <ol>
-      <li>Come up with a creative idea</li>
-      <li>Create characters and setting</li>
-      <li>Plan chapters with an outline</li>
-      <li>Write regularly (daily if possible)</li>
-      <li>Edit, proofread, and polish</li>
+      <li>Dream up an idea 💡</li>
+      <li>Create strong characters 👩🏽‍🦱</li>
+      <li>Outline your chapters 📑</li>
+      <li>Write consistently ✍🏾</li>
+      <li>Edit and polish your work ✨</li>
     </ol>
     <p>Helpful guide: <a href="https://blog.reedsy.com/how-to-write-a-novel/" target="_blank">How to Write a Novel (Reedsy)</a></p>
   </section>
 
-  <!-- FAMOUS BOOKS -->
+  <!-- FAMOUS NOVELS -->
   <section id="famous">
     <h2>Famous Novels</h2>
-    <p>Some famous novels that started small but became worldwide successes:</p>
+    <p>These novels started small but became worldwide successes:</p>
     <ul>
       <li><strong>Harry Potter</strong> – J.K. Rowling was rejected 12 times!</li>
-      <li><strong>The Hunger Games</strong> – Suzanne Collins started from a simple idea.</li>
-      <li><strong>The Fault in Our Stars</strong> – John Green began with an online project.</li>
+      <li><strong>The Hunger Games</strong> – Suzanne Collins began with a simple idea.</li>
+      <li><strong>The Fault in Our Stars</strong> – John Green grew from an online community project.</li>
     </ul>
     <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter" width="200">
     <img src="https://m.media-amazon.com/images/I/61Xo+vLlwWL._AC_UF1000,1000_QL80_.jpg" alt="Hunger Games" width="200">
@@ -188,7 +206,7 @@
   <!-- TIPS & RESOURCES -->
   <section id="tips">
     <h2>Tips & Resources</h2>
-    <p>You can share your stories on different platforms:</p>
+    <p>Share your stories on these platforms:</p>
     <ul>
       <li><a href="https://www.wattpad.com/">Wattpad</a></li>
       <li><a href="https://www.webtoons.com/">Webtoon</a></li>
