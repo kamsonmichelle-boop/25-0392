@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All About Novels</title>
 
-  <!-- Internal CSS -->
+  <!-- ✅ External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Internal CSS -->
   <style>
     body {
       font-family: "Trebuchet MS", sans-serif;
@@ -44,13 +47,7 @@
       color: #FFFFFF;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-      color: #FFDAB9; /* peach */
-    }
-
-    /* Sections */
+    /* Section layout */
     section {
       padding: 20px;
       margin: 20px auto;
@@ -63,24 +60,6 @@
     h2 {
       color: #A86EBF; /* deep mauve */
       margin-top: 0;
-    }
-
-    /* Images */
-    img {
-      display: block;
-      margin: 15px auto;
-      border-radius: 8px;
-      box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
-    }
-
-    /* Links */
-    a {
-      color: #FF6F91; /* rose pink */
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
 
     /* Table */
@@ -108,16 +87,17 @@
     /* Footer */
     footer {
       text-align: center;
-      background-color: #A86EBF; /* deep mauve */
+      background-color: #A86EBF;
       color: #FFFFFF;
       padding: 15px;
       margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- NAVIGATION BAR -->
+  <!-- ✅ NAVIGATION BAR -->
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About Novels</a>
@@ -126,15 +106,15 @@
     <a href="#tips">Tips & Resources</a>
   </nav>
 
-  <!-- HEADER -->
+  <!-- ✅ HEADER with Inline CSS example -->
   <header id="home">
-    <h1>📚 All About Novels</h1>
+    <h1 style="color:#FFDAB9; text-shadow:2px 2px #8B5FBF;">
+      📚 All About Novels
+    </h1>
     <p>Discover novels, learn how to write them, and explore inspiring stories.</p>
   </header>
-  <!-- External CSS -->
-  <link rel="stylesheet" href="style.css">
 
-  <!-- ABOUT NOVELS -->
+  <!-- ✅ ABOUT NOVELS -->
   <section id="about">
     <h2>About Novels</h2>
     <p>Novels are long stories that take readers on a journey. They come in many beautiful genres:</p>
@@ -145,10 +125,12 @@
       <li>Science Fiction 🚀</li>
       <li>Historical Fiction ⏳</li>
     </ul>
-    <img src="https://cayceberryman.com/wp-content/uploads/2016/08/writing-motivation.jpg" alt="Stack of books" width="400">
+    <img src="https://cayceberryman.com/wp-content/uploads/2016/08/writing-motivation.jpg" 
+         alt="Stack of books" width="400"
+         style="display:block; margin:auto; border-radius:10px; border:2px solid #A86EBF;"> <!-- Inline CSS -->
   </section>
 
-  <!-- HOW TO WRITE -->
+  <!-- ✅ HOW TO WRITE -->
   <section id="how">
     <h2>How to Write a Novel</h2>
     <ol>
@@ -158,10 +140,14 @@
       <li>Write consistently ✍🏾</li>
       <li>Edit and polish your work ✨</li>
     </ol>
-    <p>Helpful guide: <a href="https://blog.reedsy.com/how-to-write-a-novel/" target="_blank">How to Write a Novel (Reedsy)</a></p>
+    <p>Helpful guide: 
+      <a href="https://blog.reedsy.com/how-to-write-a-novel/" target="_blank">
+        How to Write a Novel (Reedsy)
+      </a>
+    </p>
   </section>
 
-  <!-- FAMOUS NOVELS -->
+  <!-- ✅ FAMOUS NOVELS -->
   <section id="famous">
     <h2>Famous Novels</h2>
     <p>These novels started small but became worldwide successes:</p>
@@ -170,11 +156,15 @@
       <li><strong>The Hunger Games</strong> – Suzanne Collins began with a simple idea.</li>
       <li><strong>The Fault in Our Stars</strong> – John Green grew from an online community project.</li>
     </ul>
-    <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter" width="200">
-    <img src="https://m.media-amazon.com/images/I/81SuY1L1FeL._AC_UY327_FMwebp_QL65_.jpg" alt="Hunger Games" width="200">
+    <div style="text-align:center;"> <!-- Inline styling for layout -->
+      <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" 
+           alt="Harry Potter" width="200" style="display:inline-block; margin:10px;">
+      <img src="https://m.media-amazon.com/images/I/81SuY1L1FeL._AC_UY327_FMwebp_QL65_.jpg" 
+           alt="Hunger Games" width="200" style="display:inline-block; margin:10px;">
+    </div>
   </section>
 
-  <!-- TABLE -->
+  <!-- ✅ TABLE -->
   <section>
     <h2>Book Information Table</h2>
     <table>
@@ -205,7 +195,7 @@
     </table>
   </section>
 
-  <!-- TIPS & RESOURCES -->
+  <!-- ✅ TIPS & RESOURCES -->
   <section id="tips">
     <h2>Tips & Resources</h2>
     <p>Share your stories on these platforms:</p>
@@ -217,19 +207,16 @@
       <li><a href="https://kdp.amazon.com/">Amazon Kindle Direct</a></li>
     </ul>
     <p>Here’s a motivational video:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bfdqDlfEqZc" title="Writing Motivation - Why We Write" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bfdqDlfEqZc" 
+      title="Writing Motivation - Why We Write" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ✅ FOOTER -->
   <footer>
     <p>&copy; 2025 All About Novels | Created for Web Technology Class</p>
   </footer>
 
 </body>
 </html>
-
-
-
-
-
