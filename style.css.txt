@@ -1,0 +1,58 @@
+/* External CSS (style.css) */
+
+body {
+  background: linear-gradient(to bottom right, #E6E6FA, #FFD1DC);
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #3E3E3E;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #A86EBF;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #FFFFFF;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #FFDAB9;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #B39EB5;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #B39EB5;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #F3E8FF;
+}
+
+/* Footer */
+footer {
+  background-color: #A86EBF;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
